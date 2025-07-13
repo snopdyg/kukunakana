@@ -26,12 +26,16 @@ export function AboutSection() {
             Buy OLO
           </Button>
           <div className="flex gap-4">
-            <Button variant="ghost" size="icon" className="text-white hover:text-gray-200">
-              <Image src="/twitter-icon.png" alt="Twitter Icon" width={32} height={32} />
-            </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-gray-200">
-              <Image src="/telegram-icon.webp" alt="Telegram Icon" width={32} height={32} />
-            </Button>
+            <a href="https://x.com/basedolo_" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-white hover:text-gray-200">
+                <Image src="/twitter-icon.png" alt="Twitter Icon" width={32} height={32} />
+              </Button>
+            </a>
+            <a href="https://t.me/BasedOLO" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="text-white hover:text-gray-200">
+                <Image src="/telegram-icon.webp" alt="Telegram Icon" width={32} height={32} />
+              </Button>
+            </a>
           </div>
         </div>
         {/* Removed placeholder images */}
