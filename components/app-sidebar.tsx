@@ -8,6 +8,8 @@ import {
   SendIcon,
   MessageCircleIcon,
   HomeIcon,
+  TwitterIcon,
+  SendHorizonalIcon,
 } from "lucide-react"
 import {
   SidebarContent,
@@ -73,6 +75,18 @@ export default function AppSidebar({ setSelectedFeature, activeFeature }: AppSid
             >
               <MessageCircleIcon className="h-5 w-5" />
               <span>Contact Us</span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton onClick={() => window.open("https://t.me/smoat_tools", "_blank")}>
+              <SendHorizonalIcon className="h-5 w-5" />
+              <span>Telegram</span>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+          <SidebarMenuItem>
+            <SidebarMenuButton onClick={() => window.open("https://twitter.com/smoat_tools", "_blank")}>
+              <TwitterIcon className="h-5 w-5" />
+              <span>Twitter</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>

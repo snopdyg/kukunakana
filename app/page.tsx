@@ -146,7 +146,7 @@ export default function Home() {
               <ToolCard
                 title="Multisender (Many-to-One)"
                 description="Conveniently send! One click, supporting management efficiency, batch transfer tokens into the main account, saving time and gas."
-                iconSrc="/images/smoat-phone-smiling-transparent.jpeg"
+                iconSrc="/images/smoat-cigarette-transparent.png"
               />
               <ToolCard
                 title="Create Liquidity and Buy"
