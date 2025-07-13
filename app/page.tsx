@@ -30,11 +30,11 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 space-y-6">
           {" "}
           {/* Centered container with max-width, horizontal padding, and reduced vertical spacing */}
-          {/* Large Card: $MOAT Batch Tools */}
+          {/* Large Card: $SMOAT Batch Tools */}
           <section className="relative bg-card rounded-lg p-6 flex flex-col md:flex-row items-center justify-between overflow-hidden shadow-lg">
             <div className="relative z-10 space-y-3 text-center md:text-left">
               <h1 className="text-2xl md:text-3xl font-bold text-white leading-tight">
-                $MOAT <span className="text-primary">Batch Tools</span>
+                $SMOAT <span className="text-primary">Batch Tools</span>
               </h1>
               <p className="text-gray-300 max-w-md mx-auto md:mx-0 text-base">
                 Automatic Execution for DeFi Operations
@@ -46,7 +46,7 @@ export default function Home() {
             <div className="relative z-10 mt-6 md:mt-0 md:ml-6">
               {/* Placeholder for abstract illustration */}
               <Image
-                src="/placeholder.svg?height=150&width=150"
+                src="/images/smoat-thumbs-up-transparent.png"
                 alt="Abstract illustration of DeFi tools"
                 width={150}
                 height={150}
@@ -59,17 +59,17 @@ export default function Home() {
             <FeatureCard
               title="Efficient Execution"
               description="Streamline your DeFi operations with automated, gas-optimized transactions for maximum efficiency."
-              iconSrc="/placeholder.svg?height=80&width=80"
+              iconSrc="/images/smoat-crossed-arms-transparent.png"
             />
             <FeatureCard
               title="Security Assurance"
               description="Built with robust security protocols and audited smart contracts to protect your assets and data."
-              iconSrc="/placeholder.svg?height=80&width=80"
+              iconSrc="/images/smoat-robe-sitting-transparent.jpeg"
             />
             <FeatureCard
               title="Real-Time Support"
               description="Access 24/7 dedicated support to assist you with any queries or technical challenges."
-              iconSrc="/placeholder.svg?height=80&width=80"
+              iconSrc="/images/smoat-phone-smiling-transparent.jpeg"
             />
           </section>
           {/* Main Hero Section */}
@@ -88,9 +88,9 @@ export default function Home() {
             </div>
             <div className="flex justify-center">
               <Image
-                src="/placeholder.svg?height=250&width=500"
+                src="/images/smoat-robe-transparent.jpeg"
                 alt="Dev tools illustration"
-                width={500}
+                width={250}
                 height={250}
                 className="object-contain"
               />
@@ -136,28 +136,28 @@ export default function Home() {
               <ToolCard
                 title="Batch Generate Wallets"
                 description="Safely generate multiple wallets, manage private keys with one click, supporting multi-information export."
-                iconSrc="/placeholder.svg?height=60&width=60"
+                iconSrc="/images/smoat-phone-smoat-transparent.png"
               />
               <ToolCard
                 title="Multisender (One-to-Many)"
                 description="Efficiently send! Quickly transfer tokens to multiple addresses in batches—distribute airdrops, transfer tokens into the main account, saving time and gas."
-                iconSrc="/placeholder.svg?height=60&width=60"
+                iconSrc="/images/smoat-thumbs-up-transparent.png"
               />
               <ToolCard
                 title="Multisender (Many-to-One)"
                 description="Conveniently send! One click, supporting management efficiency, batch transfer tokens into the main account, saving time and gas."
-                iconSrc="/placeholder.svg?height=60&width=60"
+                iconSrc="/images/smoat-phone-smiling-transparent.jpeg"
               />
               <ToolCard
                 title="Create Liquidity and Buy"
                 description="Secure and instant automatic trading, supporting multiple purchases, ensuring 100% of the earliest transaction and only."
-                iconSrc="/placeholder.svg?height=60&width=60"
+                iconSrc="/images/smoat-flexing-arm-transparent.png"
               />
             </div>
           </section>
           {/* Footer */}
           <footer className="text-center text-gray-500 text-sm py-6 border-t border-gray-800 mt-8">
-            Moat Tools ©2024
+            $SMOAT Tools ©2024
           </footer>
         </div>
       )

@@ -7,8 +7,8 @@ import { Toaster } from "@/components/ui/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "$MOAT Tools Dashboard",
-  description: "Modern web app dashboard for $MOAT Tools, optimized for DeFi investors and crypto power users.",
+  title: "$SMOAT Tools Dashboard",
+  description: "Modern web app dashboard for $SMOAT Tools, optimized for DeFi investors and crypto power users.",
     generator: 'v0.dev'
 }
 

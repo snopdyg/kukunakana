@@ -30,11 +30,11 @@ export default function Sidebar({ setSelectedFeature, activeFeature }: SidebarPr
   return (
     <div className="hidden lg:flex flex-col w-64 bg-card text-gray-50 h-screen p-4 fixed shadow-lg">
       <div className="flex items-center gap-2 mb-8">
-        {/* Placeholder for $MOAT logo */}
+        {/* Placeholder for $SMOAT logo */}
         <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-          $M
+          $S
         </div>
-        <span className="text-xl font-semibold">$MOAT Tools</span>
+        <span className="text-xl font-semibold">$SMOAT Tools</span>
       </div>
       <nav className="flex-1 space-y-2">
         {menuItems.map((item) => (
