@@ -5,10 +5,10 @@ export function MarqueeBanner() {
     <div className="relative w-full overflow-hidden py-2 bg-black text-white border-y-4 border-memecoin-blue">
       <div className="flex animate-marquee whitespace-nowrap">
         <span className="text-lg font-bold mx-4">
-          BUY $OLO • THE BIGGEST MEME ON BASE • BUY $OLO • THE BIGGEST MEME ON BASE •
+          BUY $BOLO • THE BIGGEST MEME ON BASE • BUY $BOLO • THE BIGGEST MEME ON BASE •
         </span>
         <span className="text-lg font-bold mx-4">
-          BUY $OLO • THE BIGGEST MEME ON BASE • BUY $OLO • THE BIGGEST MEME ON BASE •
+          BUY $BOLO • THE BIGGEST MEME ON BASE • BUY $BOLO • THE BIGGEST MEME ON BASE •
         </span>
       </div>
       <style jsx>{`

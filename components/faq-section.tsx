@@ -4,34 +4,34 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export function FAQSection() {
   const faqs = [
     {
-      question: "What is OLO?",
+      question: "What is BOLO?", // Updated text
       answer:
-        "OLO is a community-driven cryptocurrency inspired by internet meme culture. It aims to create a fun and engaging ecosystem for its holders.",
+        "BOLO is a community-driven cryptocurrency inspired by internet meme culture. It aims to create a fun and engaging ecosystem for its holders.", // Updated text
     },
     {
-      question: "How do I buy OLO?",
+      question: "How do I buy BOLO?", // Updated text
       answer:
-        "You can buy OLO on decentralized exchanges (DEXs) like PancakeSwap. You'll need a crypto wallet (e.g., MetaMask) and some BNB to exchange.",
+        "You can buy BOLO on decentralized exchanges (DEXs) like PancakeSwap. You'll need a crypto wallet (e.g., MetaMask) and some BNB to exchange.", // Updated text
     },
     {
-      question: "Is OLO a good investment?",
+      question: "Is BOLO a good investment?", // Updated text
       answer:
-        "Cryptocurrency investments are subject to high market risk. Please do your own research and invest responsibly. OLO is primarily for entertainment and community engagement.",
+        "Cryptocurrency investments are subject to high market risk. Please do your own research and invest responsibly. BOLO is primarily for entertainment and community engagement.", // Updated text
     },
     {
-      question: "Where can I find the OLO community?",
+      question: "Where can I find the BOLO community?", // Updated text
       answer:
-        "Join our official Telegram, Twitter, and Discord channels to connect with other OLO enthusiasts and stay updated on the latest news.",
+        "Join our official Telegram, Twitter, and Discord channels to connect with other BOLO enthusiasts and stay updated on the latest news.", // Updated text
     },
     {
-      question: "What are the tokenomics of OLO?",
+      question: "What are the tokenomics of BOLO?", // Updated text
       answer:
-        "OLO has a total supply of 100 Trillion tokens, with a portion allocated to marketing, liquidity, and community rewards. Detailed tokenomics are available in our whitepaper.",
+        "BOLO has a total supply of 100 Trillion tokens, with a portion allocated to marketing, liquidity, and community rewards. Detailed tokenomics are available in our whitepaper.", // Updated text
     },
     {
-      question: "What is the future of OLO?",
+      question: "What is the future of BOLO?", // Updated text
       answer:
-        "Our roadmap outlines plans for CEX listings, NFT collections, metaverse integration, and building a strong decentralized autonomous organization (DAO) for community governance.",
+        "Our roadmap outlines plans for CEX listings, NFT collections, metaverse integration, and building a strong decentralized autonomous organization (DAO) for community governance.", // Updated text
     },
   ]
 

@@ -5,22 +5,22 @@ export function HowToBuySection() {
     {
       title: "Set Up a Crypto Wallet",
       description:
-        "Download and set up a secure crypto wallet like MetaMask or Trust Wallet. This will be your gateway to the world of OLO.",
+        "Download and set up a secure crypto wallet like MetaMask or Trust Wallet. This will be your gateway to the world of BOLO.", // Updated text
     },
     {
-      title: "Exchange BASE/OLO",
+      title: "Exchange BASE/BOLO", // Updated text
       description:
-        "Use a decentralized exchange (DEX) like PancakeSwap to exchange BASE for OLO. Ensure you have enough BNB for gas fees.", // Updated text here
+        "Use a decentralized exchange (DEX) like PancakeSwap to exchange BASE for BOLO. Ensure you have enough BNB for gas fees.", // Updated text
     },
     {
       title: "Connect Your Wallet",
       description:
-        "Visit our official website and connect your wallet to the platform. This will allow you to interact with the OLO ecosystem.",
+        "Visit our official website and connect your wallet to the platform. This will allow you to interact with the BOLO ecosystem.", // Updated text
     },
     {
       title: "Start Buying & Selling",
       description:
-        "Once connected, you can start buying, selling, and trading OLO. Join our community for tips and updates!",
+        "Once connected, you can start buying, selling, and trading BOLO. Join our community for tips and updates!", // Updated text
     },
   ]
 

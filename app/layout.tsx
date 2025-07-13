@@ -6,7 +6,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "$OLO on BASE", // Updated title
+  title: "$BOLO on BASE", // Updated title
   description: "The biggest meme on BASE",
   icons: {
     icon: "/favicon.jpeg", // Updated favicon path

@@ -38,7 +38,7 @@ export function HeroSection() {
         </div>
         <Image
           src="/olo-smartwatch.png"
-          alt="OLO Character"
+          alt="BOLO Character" // Updated alt text
           width={500}
           height={500}
           className="mt-8 md:mt-16 animate-float-up"
