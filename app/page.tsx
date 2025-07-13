@@ -80,12 +80,6 @@ export default function Home() {
             <p className="text-gray-300 text-base max-w-xl mx-auto">
               Simple · Secure · Efficient, helping you achieve more with less effort to successfully build your project.
             </p>
-            <div className="flex flex-wrap justify-center gap-4 py-3">
-              <div className="flex items-center gap-2 text-blue-400 border border-blue-600 rounded-full px-3 py-1 bg-blue-950/50 text-sm">
-                <Image src="/placeholder.svg?height=16&width=16" alt="BASE" width={16} height={16} />
-                BASE
-              </div>
-            </div>
             <div className="flex justify-center">
               <Image
                 src="/images/smoat-robe-transparent.jpeg"
