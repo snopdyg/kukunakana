@@ -23,10 +23,10 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#0F172A", // Dark navy background
+        background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#3B82F6", // Blue accent
+          DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
@@ -50,9 +50,12 @@ const config = {
           foreground: "hsl(var(--popover-foreground))",
         },
         card: {
-          DEFAULT: "#1E293B", // Dark gray for cards/sidebar
+          DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Custom colors from the design
+        "memecoin-blue": "#007bff", // A vibrant blue
+        // "memecoin-yellow": "#ffc107", // Removed
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -72,6 +75,9 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        "forest-background": "url('/forest-background.png')",
       },
     },
   },
