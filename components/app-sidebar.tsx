@@ -75,13 +75,13 @@ export default function AppSidebar({ setSelectedFeature, activeFeature }: AppSid
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton onClick={() => window.open("https://t.me/smoat_tools", "_blank")}>
+            <SidebarMenuButton onClick={() => window.open("https://t.me/smoatbased", "_blank")}>
               <SendHorizonalIcon className="h-5 w-5" />
               <span>Telegram</span>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton onClick={() => window.open("https://twitter.com/smoat_tools", "_blank")}>
+            <SidebarMenuButton onClick={() => window.open("https://x.com/smoatbase", "_blank")}>
               <TwitterIcon className="h-5 w-5" />
               <span>Twitter</span>
             </SidebarMenuButton>

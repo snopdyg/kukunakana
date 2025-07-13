@@ -64,14 +64,14 @@ export default function Sidebar({ setSelectedFeature, activeFeature }: SidebarPr
           Contact Us
         </button>
         <button
-          onClick={() => window.open("https://t.me/smoat_tools", "_blank")}
+          onClick={() => window.open("https://t.me/smoatbased", "_blank")}
           className="flex items-center gap-3 rounded-md px-3 py-2 w-full text-left transition-colors text-gray-300 hover:bg-primary/20 hover:text-primary"
         >
           <SendHorizonalIcon className="h-5 w-5" />
           Telegram
         </button>
         <button
-          onClick={() => window.open("https://twitter.com/smoat_tools", "_blank")}
+          onClick={() => window.open("https://x.com/smoatbase", "_blank")}
           className="flex items-center gap-3 rounded-md px-3 py-2 w-full text-left transition-colors text-gray-300 hover:bg-primary/20 hover:text-primary"
         >
           <TwitterIcon className="h-5 w-5" />
