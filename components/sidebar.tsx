@@ -32,10 +32,7 @@ export default function Sidebar({ setSelectedFeature, activeFeature }: SidebarPr
   return (
     <div className="hidden lg:flex flex-col w-64 bg-card text-gray-50 h-screen p-4 fixed shadow-lg">
       <div className="flex items-center gap-2 mb-8">
-        {/* Placeholder for $SMOAT logo */}
-        <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-          $S
-        </div>
+        {/* Removed Placeholder for $SMOAT logo */}
         <span className="text-xl font-semibold">$SMOAT Tools</span>
       </div>
       <nav className="flex-1 space-y-2">

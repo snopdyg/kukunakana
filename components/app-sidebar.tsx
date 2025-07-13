@@ -42,10 +42,7 @@ export default function AppSidebar({ setSelectedFeature, activeFeature }: AppSid
   return (
     <>
       <SidebarHeader className="flex items-center gap-2 p-4">
-        {/* Placeholder for $SMOAT logo */}
-        <div className="h-8 w-8 bg-primary rounded-full flex items-center justify-center text-white font-bold text-lg">
-          $S
-        </div>
+        {/* Removed Placeholder for $SMOAT logo */}
         <span className="text-xl font-semibold">$SMOAT Tools</span>
       </SidebarHeader>
       <SidebarContent className="flex-1 overflow-auto">

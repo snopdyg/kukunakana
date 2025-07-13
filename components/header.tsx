@@ -2,8 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from "@/components/ui/dropdown-menu"
-import { ChevronDownIcon } from "lucide-react"
 import { useToast } from "@/hooks/use-toast"
 import { SidebarTrigger } from "@/components/ui/sidebar"
 
@@ -104,18 +102,6 @@ export default function Header() {
         <SidebarTrigger className="-ml-1" />
       </div>
       <div className="flex items-center gap-4 ml-auto">
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="ghost" className="flex items-center gap-2 text-gray-300 hover:text-primary">
-              BASE
-              <ChevronDownIcon className="h-4 w-4" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end" className="bg-card text-gray-50 border-gray-700">
-            <DropdownMenuItem className="hover:bg-primary/20">BASE Mainnet</DropdownMenuItem>
-            <DropdownMenuItem className="hover:bg-primary/20">BASE Testnet</DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
         <Button
           onClick={handleConnectWallet}
           className="bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-sm"
