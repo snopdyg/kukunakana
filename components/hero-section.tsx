@@ -4,6 +4,13 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
 export function HeroSection() {
+  const handleLearnMoreClick = () => {
+    const aboutSection = document.getElementById("about")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section className="relative w-full h-[700px] md:h-[800px] bg-forest-background bg-cover bg-center bg-fixed overflow-hidden flex flex-col items-center justify-center text-center pt-20 pb-10">
       {/* Background elements */}
@@ -24,6 +31,7 @@ export function HeroSection() {
           <Button
             variant="outline"
             className="border-2 border-white text-white font-bold text-lg px-8 py-6 rounded-full bg-transparent hover:bg-white hover:text-memecoin-blue transition-colors"
+            onClick={handleLearnMoreClick} // Added onClick handler
           >
             Learn More
           </Button>

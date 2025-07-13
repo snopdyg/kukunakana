@@ -6,7 +6,10 @@ import { Button } from "@/components/ui/button"
 
 export function AboutSection() {
   return (
-    <section className="relative w-full py-16 md:py-24 bg-forest-background bg-cover bg-center bg-fixed flex flex-col md:flex-row items-center justify-center gap-8 px-4">
+    <section
+      id="about"
+      className="relative w-full py-16 md:py-24 bg-forest-background bg-cover bg-center bg-fixed flex flex-col md:flex-row items-center justify-center gap-8 px-4"
+    >
       <div className="relative w-full md:w-1/3 flex justify-center">
         <Image src="/olo-head.png" alt="OLO Character Head" width={350} height={350} className="z-10" />
         {/* Removed placeholder images */}
