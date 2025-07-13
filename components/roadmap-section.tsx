@@ -1,5 +1,5 @@
 "use client"
-import { CheckCircle } from "lucide-react"
+// Removed import for CheckCircle
 
 export function RoadmapSection() {
   const roadmapPhases = [
@@ -64,7 +64,7 @@ export function RoadmapSection() {
                   <ul className="space-y-2 text-white text-sm">
                     {phase.items.map((item, i) => (
                       <li key={i} className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-green-500 shrink-0" />
+                        {/* Removed CheckCircle icon */}
                         <span>{item}</span>
                       </li>
                     ))}

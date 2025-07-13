@@ -8,9 +8,9 @@ export function HowToBuySection() {
         "Download and set up a secure crypto wallet like MetaMask or Trust Wallet. This will be your gateway to the world of OLO.",
     },
     {
-      title: "Exchange BNB/MEMECOIN",
+      title: "Exchange BASE/OLO",
       description:
-        "Use a decentralized exchange (DEX) like PancakeSwap to exchange your BNB for OLO. Ensure you have enough BNB for gas fees.",
+        "Use a decentralized exchange (DEX) like PancakeSwap to exchange BASE for OLO. Ensure you have enough BNB for gas fees.", // Updated text here
     },
     {
       title: "Connect Your Wallet",
