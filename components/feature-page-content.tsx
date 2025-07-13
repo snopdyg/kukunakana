@@ -22,6 +22,12 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
   const [numberOfWalletsInput, setNumberOfWalletsInput] = useState<string>("1")
   const [generatedWallets, setGeneratedWallets] = useState<{ address: string; privateKey: string }[]>([])
 
+  // State for Token Creation
+  const [tokenName, setTokenName] = useState("")
+  const [tokenSymbol, setTokenSymbol] = useState("")
+  const [tokenDecimals, setTokenDecimals] = useState("")
+  const [totalSupply, setTotalSupply] = useState("")
+
   // State for Multisender (One-to-Many)
   const [recipientList, setRecipientList] = useState("")
   const [amountPerRecipient, setAmountPerRecipient] = useState("")
@@ -52,12 +58,26 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
   const [swapAmount, setSwapAmount] = useState("")
   const [isSwapping, setIsSwapping] = useState(false)
 
+  // State for Contact Us
+  const [contactEmail, setContactEmail] = useState("")
+  const [contactSubject, setContactSubject] = useState("")
+  const [contactMessage, setContactMessage] = useState("")
+
   // State for dynamic notification message
   const [notificationMessage, setNotificationMessage] = useState<string | null>(null)
 
   // Clear notification message when feature changes
   useEffect(() => {
     setNotificationMessage(null)
+    // Reset form states when feature changes
+    setTokenName("")
+    setTokenSymbol("")
+    setTokenDecimals("")
+    setTotalSupply("")
+    setContactEmail("")
+    setContactSubject("")
+    setContactMessage("")
+    // Other form states are already handled by their respective functions or are persistent
   }, [featureName])
 
   const handleSubmit = (event: React.FormEvent) => {
@@ -424,10 +444,20 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
       case "token-creation":
         return (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <Input placeholder="Token Name" />
-            <Input placeholder="Token Symbol" />
-            <Input type="number" placeholder="Decimals" />
-            <Input type="number" placeholder="Total Supply" />
+            <Input placeholder="Token Name" value={tokenName} onChange={(e) => setTokenName(e.target.value)} />
+            <Input placeholder="Token Symbol" value={tokenSymbol} onChange={(e) => setTokenSymbol(e.target.value)} />
+            <Input
+              type="number"
+              placeholder="Decimals"
+              value={tokenDecimals}
+              onChange={(e) => setTokenDecimals(e.target.value)}
+            />
+            <Input
+              type="number"
+              placeholder="Total Supply"
+              value={totalSupply}
+              onChange={(e) => setTotalSupply(e.target.value)}
+            />
             <Button type="submit" className="w-full bg-primary hover:bg-blue-700">
               Create Token
             </Button>
@@ -442,7 +472,7 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
             <Input
               type="number"
               placeholder="Number of Wallets to Generate"
-              value={numberOfWalletsInput} // This value is always a string, initialized to "1"
+              value={numberOfWalletsInput}
               onChange={(e) => setNumberOfWalletsInput(e.target.value)}
               min={1}
             />
@@ -474,14 +504,14 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="ERC20 Token Address (leave blank for ETH)"
-              value={queryTokenAddress} // Ensures value is always a string
+              value={queryTokenAddress}
               onChange={(e) => setQueryTokenAddress(e.target.value)}
             />
             <Textarea
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               rows={8}
               placeholder="List of Addresses (one per line)"
-              value={queryAddressList} // Ensures value is always a string
+              value={queryAddressList}
               onChange={(e) => setQueryAddressList(e.target.value)}
             />
             <Button
@@ -513,21 +543,21 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="ERC20 Token Address (leave blank to send ETH)"
-              value={tokenAddress} // Ensures value is always a string
+              value={tokenAddress}
               onChange={(e) => setTokenAddress(e.target.value)}
             />
             <Textarea
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               placeholder="Recipient Addresses (one per line)"
               rows={6}
-              value={recipientList} // Ensures value is always a string
+              value={recipientList}
               onChange={(e) => setRecipientList(e.target.value)}
             />
             <Input
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="Amount per recipient"
-              value={amountPerRecipient} // Ensures value is always a string
+              value={amountPerRecipient}
               onChange={(e) => setAmountPerRecipient(e.target.value)}
             />
             <Button
@@ -549,14 +579,14 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="ERC20 Token Address (leave blank to send ETH)"
-              value={manyToOneTokenAddress} // Ensures value is always a string
+              value={manyToOneTokenAddress}
               onChange={(e) => setManyToOneTokenAddress(e.target.value)}
             />
             <Textarea
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               placeholder="Sender Addresses (one per line) - for info only"
               rows={6}
-              value={senderList} // Ensures value is always a string
+              value={senderList}
               onChange={(e) => setSenderList(e.target.value)}
               disabled
             />
@@ -564,14 +594,14 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="Recipient Address"
-              value={manyToOneRecipient} // Ensures value is always a string
+              value={manyToOneRecipient}
               onChange={(e) => setManyToOneRecipient(e.target.value)}
             />
             <Input
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="Total Amount"
-              value={manyToOneTotalAmount} // Ensures value is always a string
+              value={manyToOneTotalAmount}
               onChange={(e) => setManyToOneTotalAmount(e.target.value)}
             />
             <Button
@@ -593,14 +623,14 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="ERC20 Token Address (leave blank to send ETH)"
-              value={manyToManyTokenAddress} // Ensures value is always a string
+              value={manyToManyTokenAddress}
               onChange={(e) => setManyToManyTokenAddress(e.target.value)}
             />
             <Textarea
               className="w-full p-3 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               rows={10}
               placeholder={`Transfer List (e.g. JSON)\n[\n  { "to": "0x123...", "amount": "0.01" },\n  { "to": "0x456...", "amount": "0.05" }\n]`}
-              value={transferListRaw} // Ensures value is always a string
+              value={transferListRaw}
               onChange={(e) => setTransferListRaw(e.target.value)}
             />
             <Button
@@ -622,21 +652,21 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="Token A address (e.g., WETH)"
-              value={swapTokenA} // Ensures value is always a string
+              value={swapTokenA}
               onChange={(e) => setSwapTokenA(e.target.value)}
             />
             <Input
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="Token B address (e.g., USDC)"
-              value={swapTokenB} // Ensures value is always a string
+              value={swapTokenB}
               onChange={(e) => setSwapTokenB(e.target.value)}
             />
             <Input
               className="w-full p-2 rounded bg-input text-gray-50 border border-gray-700 focus:ring-primary focus:border-primary"
               type="text"
               placeholder="Amount to Swap"
-              value={swapAmount} // Ensures value is always a string
+              value={swapAmount}
               onChange={(e) => setSwapAmount(e.target.value)}
             />
             <Button
@@ -654,9 +684,19 @@ export default function FeaturePageContent({ featureName }: FeaturePageContentPr
       case "contact-us":
         return (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <Input placeholder="Your Email" type="email" />
-            <Input placeholder="Subject" />
-            <Textarea placeholder="Your Message" rows={5} />
+            <Input
+              placeholder="Your Email"
+              type="email"
+              value={contactEmail}
+              onChange={(e) => setContactEmail(e.target.value)}
+            />
+            <Input placeholder="Subject" value={contactSubject} onChange={(e) => setContactSubject(e.target.value)} />
+            <Textarea
+              placeholder="Your Message"
+              rows={5}
+              value={contactMessage}
+              onChange={(e) => setContactMessage(e.target.value)}
+            />
             <Button type="submit" className="w-full bg-primary hover:bg-blue-700">
               Send Message
             </Button>

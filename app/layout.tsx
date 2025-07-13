@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "$SMOAT Tools Dashboard",
   description: "Modern web app dashboard for $SMOAT Tools, optimized for DeFi investors and crypto power users.",
+  icons: {
+    icon: "/favicon.png",
+  },
     generator: 'v0.dev'
 }
 
