@@ -25,9 +25,15 @@ export function HeroSection() {
           BASE OLO
         </h1>
         <div className="flex gap-4 mt-4">
-          <Button className="bg-memecoin-blue text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
-            Buy Now
-          </Button>
+          <a
+            href="https://ape.store/base/0x1862ce534324982ff7708f59f12ca1832e729b89"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="bg-memecoin-blue text-white font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+              Buy Now
+            </Button>
+          </a>
           <Button
             variant="outline"
             className="border-2 border-white text-white font-bold text-lg px-8 py-6 rounded-full bg-transparent hover:bg-white hover:text-memecoin-blue transition-colors"
