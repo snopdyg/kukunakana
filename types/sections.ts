@@ -13,18 +13,7 @@ export const sections: Section[] = [
     id: "xrp-trench-warriors", // ID tetap sama untuk konsistensi
     title: "BASE TRENCH WARRIORS", // Mengubah judul
     type: "text-image-split",
-    text: `Pongo isn’t just any skunk—he’s a warrior born in the meme coin trenches, where countless tokens rise and fall in the blink of an eye. Born with black and white fur, Pongo wears his colors with pride, symbolizing his loyalty to XRP and his mission to unite meme coins under one flag. For Pongo, the XRP blockchain isn’t just a platform—it’s his battleground, and he’s ready to lead the meme coin revolution.
-
-1. Supply Posts [Where to buy]:
-   - First Ledger [DEX]
-   - XP Market [DEX]
-   - X Magnetic [DEX]
-   - MEXC
-2. Listings and Updates:
-   - Coingecko
-   - CMC
-   - MoonTok
-   - CN Token`,
+    text: `Pongo isn’t just any skunk—he’s a warrior born in the meme coin trenches, where countless tokens rise and fall in the blink of an eye. Born with black and white fur, Pongo wears his colors with pride, symbolizing his loyalty to Base and his mission to unite meme coins under one flag. For Pongo, the Base blockchain isn’t just a platform—it’s his battleground, and he’s ready to lead the meme coin revolution.`, // Mengubah teks
     image: "/images/static-right-image.png", // Gambar yang sesuai dengan bagian ini
   },
   {
