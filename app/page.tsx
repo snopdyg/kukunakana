@@ -7,7 +7,14 @@ export default function Component() {
     <div className="min-h-screen bg-blue-950 text-white font-body">
       {/* Header */}
       <header className="flex flex-col items-center justify-center p-4 md:p-6 lg:p-8">
-        <div className="bg-blue-800 text-gray-300 text-sm px-4 py-2 rounded-full mb-4 font-body">BUY $HUAHUA</div>
+        <a
+          href="https://ape.store/base/0x3323ad1915c2f78233c2ceb32846f4781704fb3d"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-blue-800 text-gray-300 text-sm px-4 py-2 rounded-full mb-4 font-body hover:bg-blue-700 transition-colors"
+        >
+          BUY $HUAHUA
+        </a>
         <nav className="w-full max-w-6xl flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Image
