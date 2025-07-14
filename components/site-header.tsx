@@ -10,13 +10,23 @@ export default function SiteHeader() {
         <span className="text-lg font-semibold sr-only">Rosy Token</span>
       </div>
       <nav className="flex items-center gap-4">
-        <Link href="#" className="text-gray-600 hover:text-gray-900 font-semibold text-sm md:text-base">
+        <Link
+          href="https://x.com/baserosy_"
+          className="text-gray-600 hover:text-gray-900 font-semibold text-sm md:text-base"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Twitter
         </Link>
         <Button className="rounded-full px-4 py-2 text-sm md:px-6 md:py-2 md:text-base font-bold bg-red-500 hover:bg-red-600 text-white">
           Buy $ROSY
         </Button>
-        <Link href="#" className="text-gray-600 hover:text-gray-900 font-semibold text-sm md:text-base">
+        <Link
+          href="https://t.me/baserosy"
+          className="text-gray-600 hover:text-gray-900 font-semibold text-sm md:text-base"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Telegram
         </Link>
       </nav>
