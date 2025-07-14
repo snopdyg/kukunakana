@@ -59,8 +59,16 @@ export default function Sidebar({ activeSectionId, onSectionChange }: SidebarPro
 
       {/* Footer Contact Info */}
       <div className="text-xs text-gray-400 space-y-1 mt-12">
-        <p>TWITTER</p>
-        <p>TELEGRAM</p>
+        <p>
+          <Link href="https://x.com/pongobase" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            TWITTER
+          </Link>
+        </p>
+        <p>
+          <Link href="https://t.me/pongobase" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            TELEGRAM
+          </Link>
+        </p>
       </div>
     </div>
   )

@@ -62,6 +62,7 @@ With these stages, PONGO aims to not only survive but thrive in the meme coin tr
 // Daftar semua gambar untuk tampilan gulir awal
 export const allScrollableImages = [
   "/images/static-right-image.png",
+  "/images/second-right-image.png", // Menambahkan kembali gambar bendera di posisi kedua
   "/images/third-right-image.png",
   "/images/fourth-right-image.png",
 ]
