@@ -31,7 +31,12 @@ export default function HowToBuySection() {
         </li>
         <li>
           Go to{" "}
-          <Link href="#" className="text-blue-600 hover:underline">
+          <Link
+            href="https://ape.store/base/0x41fff8cba2f368df6112cbfdc5fc76c8dad274b6"
+            className="text-blue-600 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ape Store
           </Link>{" "}
           and connect your wallet.
