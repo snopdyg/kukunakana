@@ -17,16 +17,26 @@ export default function Sidebar({ activeSectionId, onSectionChange }: SidebarPro
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold uppercase">
             <li>
               <button onClick={() => onSectionChange("initial-scroll")} className="hover:text-gray-400">
-                Home
+                HOME
               </button>
             </li>
             <li>
-              <Link href="#" className="hover:text-gray-400">
+              <Link
+                href="https://ape.store/base/0x3f78f4bbc138f1f5110df1b85a02e2449565a4fb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400"
+              >
                 Buy $PONGO
               </Link>
             </li>
             <li>
-              <Link href="#" className="hover:text-gray-400">
+              <Link
+                href="https://dexscreener.com/base/0xf324649C59E967332b19C81F7d031AFc841F4D92"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400"
+              >
                 DexScreen
               </Link>
             </li>
@@ -59,8 +69,16 @@ export default function Sidebar({ activeSectionId, onSectionChange }: SidebarPro
 
       {/* Footer Contact Info */}
       <div className="text-xs text-gray-400 space-y-1 mt-12">
-        <p>TWITTER</p>
-        <p>TELEGRAM</p>
+        <p>
+          <Link href="https://x.com/pongobase" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            TWITTER
+          </Link>
+        </p>
+        <p>
+          <Link href="https://t.me/pongobase" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+            TELEGRAM
+          </Link>
+        </p>
       </div>
     </div>
   )
