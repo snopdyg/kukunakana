@@ -32,14 +32,14 @@ export const sections: Section[] = [
     title: "PONGO'S MISSION",
     type: "text-image-split", // Mengubah tipe menjadi text-image-split
     text: `Pongo stands boldly against the conventional currents of the crypto world, challenging the status quo with every transaction. His mission is to break free from the chains of traditional investment norms, where speculative frenzy often overshadows true potential. Pongo isn't here to follow trends; he's here to set them, sparking a movement where creativity, community, and courage are the new currencies. He aims to redefine what it means to be a meme coin on Base — not just as a fleeting jest but as a symbol of resilience and innovation.`,
-    image: "/images/second-right-image.png", // Gambar bendera tetap ada (sekarang gambar 2)
+    image: "/images/second-right-image.png", // Menggunakan gambar bendera (gambar 2)
   },
   {
     id: "the-base-army", // Mengubah ID dan judul
     title: "THE BASE ARMY",
     type: "text-image-split", // Mengubah tipe menjadi text-image-split
     text: `Pongo's call is not just for followers but for fellow warriors. He seeks to unite all who have faith in the power of memes to disrupt, innovate, and unite. Under Pongo's leadership, the community isn't just a group of investors; it's a legion of like-minded individuals bound by the shared goal of transforming the meme coin landscape. Together, they aim to create a cohesive front, leveraging the strength of the Base blockchain to fight for visibility, value, and victory in the crypto wars. Pongo’s troop is where every member is both a soldier and a strategist in this grand meme coin crusade.`,
-    image: "/images/third-right-image.png", // Gambar parit tetap ada (sekarang gambar 3)
+    image: "/images/third-right-image.png", // Menggunakan gambar parit (gambar 3)
   },
   {
     id: "the-attack-plan",
@@ -73,7 +73,6 @@ With these stages, PONGO aims to not only survive but thrive in the meme coin tr
 // Daftar semua gambar untuk tampilan gulir awal
 export const allScrollableImages = [
   "/images/static-right-image.png",
-  "/images/third-right-image.png", // Gambar 3 sekarang di posisi 2
-  "/images/second-right-image.png", // Gambar 2 sekarang di posisi 3
+  "/images/third-right-image.png",
   "/images/fourth-right-image.png",
 ]
