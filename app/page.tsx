@@ -1,10 +1,16 @@
 import SiteHeader from "@/components/site-header"
 import HeroSection from "@/components/hero-section"
 import TokenomicsSection from "@/components/tokenomics-section"
-import ClickToPlaySection from "@/components/click-to-play-section" // Re-added import
+import ClickToPlaySection from "@/components/click-to-play-section"
 import HowToBuySection from "@/components/how-to-buy-section"
 import RoadmapSection from "@/components/roadmap-section"
 import SiteFooter from "@/components/site-footer"
+import type { Metadata } from "next" // Import Metadata type
+
+export const metadata: Metadata = {
+  title: "$ROSY",
+  description: "Rosy Token - Get cozy with Rosy on Base Network", // Optional: Add a description
+}
 
 export default function Home() {
   return (
@@ -15,7 +21,7 @@ export default function Home() {
         {/* Added container for consistent max-width and padding */}
         <HeroSection />
         <TokenomicsSection />
-        <ClickToPlaySection /> {/* Re-added component */}
+        <ClickToPlaySection />
         <HowToBuySection />
         <RoadmapSection />
       </main>
