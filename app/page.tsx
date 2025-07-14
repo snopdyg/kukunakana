@@ -50,7 +50,7 @@ export default function Component() {
               alt="Celebrity Panda Icon"
               width={64}
               height={64}
-              className="mb-4 rounded-full"
+              className="mb-4 rounded-full max-w-full h-auto"
             />
             <CardHeader>
               <CardTitle className="text-xl font-bold font-heading">The Celebrity Panda</CardTitle>
@@ -74,7 +74,7 @@ export default function Component() {
               alt="Richest Panda Icon"
               width={64}
               height={64}
-              className="mb-4 rounded-full"
+              className="mb-4 rounded-full max-w-full h-auto"
             />
             <CardHeader>
               <CardTitle className="text-xl font-bold font-heading">The Most Richest Panda</CardTitle>
@@ -98,7 +98,7 @@ export default function Component() {
               alt="Adorable Panda Icon"
               width={64}
               height={64}
-              className="mb-4 rounded-full"
+              className="mb-4 rounded-full max-w-full h-auto"
             />
             <CardHeader>
               <CardTitle className="text-xl font-bold font-heading">The Most Adorable Panda</CardTitle>
@@ -127,42 +127,42 @@ export default function Component() {
             alt="Panda 1"
             width={150}
             height={150}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover max-w-full h-auto"
           />
           <Image
             src="/images/gallery-panda-8.png"
             alt="Panda 2"
             width={150}
             height={150}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover max-w-full h-auto"
           />
           <Image
             src="/images/gallery-panda-9.png"
             alt="Panda 3"
             width={150}
             height={150}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover max-w-full h-auto"
           />
           <Image
             src="/images/gallery-panda-4.png"
             alt="Panda 4"
             width={150}
             height={150}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover max-w-full h-auto"
           />
           <Image
             src="/images/gallery-panda-5.png"
             alt="Panda 5"
             width={150}
             height={150}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover max-w-full h-auto"
           />
           <Image
             src="/images/header-logo.png"
             alt="Panda 6"
             width={150}
             height={150}
-            className="rounded-lg object-cover"
+            className="rounded-lg object-cover max-w-full h-auto"
           />
         </div>
       </section>
@@ -176,7 +176,7 @@ export default function Component() {
               alt="Panda in habitat"
               width={600}
               height={400}
-              className="rounded-lg object-cover w-full"
+              className="rounded-lg object-cover w-full max-w-full h-auto"
             />
           </div>
           <div className="md:w-1/2 relative">
