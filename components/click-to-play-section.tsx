@@ -5,7 +5,6 @@ import Image from "next/image"
 export default function ClickToPlaySection() {
   return (
     <section className="py-8 md:py-12 px-2 max-w-2xl mx-auto w-full text-center">
-      {/* Removed the h2 tag for "Click To Play" */}
       <div className="flex justify-center">
         <Image
           src="/images/floating-island.png"
