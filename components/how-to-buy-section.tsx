@@ -19,7 +19,12 @@ export default function HowToBuySection() {
         {/* Adjusted font size */}
         <li>
           Get a{" "}
-          <Link href="#" className="text-blue-600 hover:underline">
+          <Link
+            href="https://metamask.io/download"
+            className="text-blue-600 hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             MetaMask
           </Link>{" "}
           wallet.
