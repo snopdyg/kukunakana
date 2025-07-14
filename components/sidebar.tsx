@@ -17,7 +17,7 @@ export default function Sidebar({ activeSectionId, onSectionChange }: SidebarPro
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold uppercase">
             <li>
               <button onClick={() => onSectionChange("initial-scroll")} className="hover:text-gray-400">
-                Home
+                HOME
               </button>
             </li>
             <li>
