@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 
 export default function Component() {
   return (
-    <div className="min-h-screen bg-blue-950 text-white font-sans">
+    <div className="min-h-screen bg-blue-950 text-white font-body">
       {/* Header */}
       <header className="flex flex-col items-center justify-center p-4 md:p-6 lg:p-8">
-        <div className="bg-blue-800 text-gray-300 text-sm px-4 py-2 rounded-full mb-4">BUY $HUAHUA</div>
+        <div className="bg-blue-800 text-gray-300 text-sm px-4 py-2 rounded-full mb-4 font-body">BUY $HUAHUA</div>
         <nav className="w-full max-w-6xl flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Image
@@ -18,8 +18,8 @@ export default function Component() {
               className="rounded-full"
             />
             <div className="flex flex-col">
-              <span className="text-2xl font-bold">HuaHua</span>
-              <span className="text-sm text-gray-400">和花 HE HUA</span>
+              <span className="text-2xl font-bold font-heading">HuaHua</span>
+              <span className="text-sm text-gray-400 font-body">和花 HE HUA</span>
             </div>
           </div>
           {/* Removed social media icons from header */}
@@ -37,7 +37,7 @@ export default function Component() {
           className="z-0 opacity-50"
         />
         <div className="relative z-10 text-center">
-          <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight uppercase">MEET HUAHUA</h1>
+          <h1 className="text-6xl md:text-8xl font-extrabold tracking-tight uppercase font-heading">MEET HUAHUA</h1>
         </div>
       </section>
 
@@ -53,16 +53,16 @@ export default function Component() {
               className="mb-4 rounded-full"
             />
             <CardHeader>
-              <CardTitle className="text-xl font-bold">The Celebrity Panda</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">The Celebrity Panda</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300 mb-4">
+              <CardDescription className="text-gray-300 mb-4 leading-relaxed font-body">
                 HeHua (HuaHua) is considered one of China's "celebrity pandas", with her gaining popularity online. On
                 the blogging platform Weibo, HuaHua's hashtag has garnered nearly 1.6 billion engagements.
               </CardDescription>
               <Button
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-blue-950 bg-transparent"
+                className="text-white border-white hover:bg-white hover:text-blue-950 bg-transparent font-body"
               >
                 Find Out More
               </Button>
@@ -77,16 +77,16 @@ export default function Component() {
               className="mb-4 rounded-full"
             />
             <CardHeader>
-              <CardTitle className="text-xl font-bold">The Most Richest Panda</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">The Most Richest Panda</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300 mb-4">
+              <CardDescription className="text-gray-300 mb-4 leading-relaxed font-body">
                 According to statistics, HeHua (HuaHua) has a value of 299.9 billion. She earn 100 million every month.
                 For example, during the five-day May Day holiday, 204,000 tourists came to see HuaHua.
               </CardDescription>
               <Button
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-blue-950 bg-transparent"
+                className="text-white border-white hover:bg-white hover:text-blue-950 bg-transparent font-body"
               >
                 Find Out More
               </Button>
@@ -101,16 +101,16 @@ export default function Component() {
               className="mb-4 rounded-full"
             />
             <CardHeader>
-              <CardTitle className="text-xl font-bold">The Most Adorable Panda</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">The Most Adorable Panda</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300 mb-4">
+              <CardDescription className="text-gray-300 mb-4 leading-relaxed font-body">
                 HeHua (HuaHua) is so gentle and peaceful that be loved by people. Smaller size, slower movement and bad
                 at climbing trees highlight her peaceful and gentle personality.
               </CardDescription>
               <Button
                 variant="outline"
-                className="text-white border-white hover:bg-white hover:text-blue-950 bg-transparent"
+                className="text-white border-white hover:bg-white hover:text-blue-950 bg-transparent font-body"
               >
                 Find Out More
               </Button>
@@ -180,13 +180,13 @@ export default function Component() {
             />
           </div>
           <div className="md:w-1/2 relative">
-            <h2 className="text-4xl font-bold mb-4">ABOUT $HUAHUA</h2>
-            <p className="text-gray-300 mb-4">
+            <h2 className="text-4xl font-bold mb-4 font-heading">ABOUT $HUAHUA</h2>
+            <p className="text-gray-300 mb-4 leading-relaxed font-body">
               HeHua (HuaHua) is one of China's most adored pandas, born at the Chengdu Research Base. Known for her
               gentle nature, expressive eyes, and viral moments online. HeHua captured the hearts of millions. In late
               2023, her name trended across Chinese social media, drawing over 50 million reads on Weibo in just days.
             </p>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 leading-relaxed font-body">
               Now, her charm inspires the launch of <span className="font-bold text-white">SHUAHUA</span> - a meme token
               on Base Network. Celebrating culture, cuteness, and community, SHUAHUA brings the joyful spirit of He Hua
               into the world of Web3.
@@ -197,44 +197,44 @@ export default function Component() {
 
       {/* Tokenomics Section */}
       <section className="py-12 px-4 md:px-6 lg:px-8 bg-blue-950">
-        <h2 className="text-4xl font-bold text-center mb-8">HUAHUA NOMICS</h2>
+        <h2 className="text-4xl font-bold text-center mb-8 font-heading">HUAHUA NOMICS</h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="bg-blue-900 border-blue-800 text-white text-center p-6 flex flex-col items-center">
             <CardHeader>
-              <CardTitle className="text-xl font-bold">100% Liquidity Burnt</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">100% Liquidity Burnt</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300">
+              <CardDescription className="text-gray-300 leading-relaxed font-body">
                 Liquidity tokens permanently removed from circulation, creating a stable trading environment.
               </CardDescription>
             </CardContent>
           </Card>
           <Card className="bg-blue-900 border-blue-800 text-white text-center p-6 flex flex-col items-center">
             <CardHeader>
-              <CardTitle className="text-xl font-bold">1B Supply</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">1B Supply</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300">
+              <CardDescription className="text-gray-300 leading-relaxed font-body">
                 Fixed token supply with no possibility of inflation or additional minting.
               </CardDescription>
             </CardContent>
           </Card>
           <Card className="bg-blue-900 border-blue-800 text-white text-center p-6 flex flex-col items-center">
             <CardHeader>
-              <CardTitle className="text-xl font-bold">Contract Renounced</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">Contract Renounced</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300">
+              <CardDescription className="text-gray-300 leading-relaxed font-body">
                 Ownership relinquished, ensuring no single entity can modify the contract.
               </CardDescription>
             </CardContent>
           </Card>
           <Card className="bg-blue-900 border-blue-800 text-white text-center p-6 flex flex-col items-center">
             <CardHeader>
-              <CardTitle className="text-xl font-bold">Zero % Tax</CardTitle>
+              <CardTitle className="text-xl font-bold font-heading">Zero % Tax</CardTitle>
             </CardHeader>
             <CardContent>
-              <CardDescription className="text-gray-300">
+              <CardDescription className="text-gray-300 leading-relaxed font-body">
                 Zero tax on buys and sells, maximizing value for traders and holders.
               </CardDescription>
             </CardContent>
@@ -244,7 +244,7 @@ export default function Component() {
 
       {/* Community Section */}
       <section className="py-12 px-4 md:px-6 lg:px-8 bg-blue-950 text-center">
-        <h2 className="text-4xl font-bold mb-8">Join HeHua Community</h2>
+        <h2 className="text-4xl font-bold mb-8 font-heading">Join HeHua Community</h2>
         <div className="flex justify-center space-x-6">
           <a href="#" aria-label="Telegram" className="text-white hover:opacity-75">
             <Image src="/images/telegram-icon.webp" alt="Telegram" width={40} height={40} />
@@ -256,7 +256,7 @@ export default function Component() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 text-center text-gray-500 text-sm">
+      <footer className="py-8 text-center text-gray-500 text-sm font-body">
         <p>&copy; {new Date().getFullYear()} HuaHua. All rights reserved.</p>
       </footer>
     </div>
