@@ -14,8 +14,11 @@ const space_grotesk = Space_Grotesk({
 })
 
 export const metadata = {
-  title: "HuaHua - The Celebrity Panda",
+  title: "$HUAHUA on BASE",
   description: "Meet HeHua, the celebrity panda, and the $HUAHUA meme token on Base Network.",
+  icons: {
+    icon: "/favicon.png", // Explicitly set favicon
+  },
     generator: 'v0.dev'
 }
 
