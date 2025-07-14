@@ -8,7 +8,7 @@ type SidebarProps = {
   onSectionChange: (id: string) => void
 }
 
-export default function Sidebar({ activeSectionId, onSectionChange }: SidebarProps) {
+export default function Sidebar({ activeSectionId, onSectionIdChange }: SidebarProps) {
   return (
     <div className="w-full md:w-[400px] flex-shrink-0 bg-black text-white p-6 flex flex-col justify-between md:h-screen md:sticky md:top-0 overflow-y-auto">
       <div>
@@ -16,12 +16,17 @@ export default function Sidebar({ activeSectionId, onSectionChange }: SidebarPro
         <nav className="mb-12">
           <ul className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-bold uppercase">
             <li>
-              <button onClick={() => onSectionChange("initial-scroll")} className="hover:text-gray-400">
+              <button onClick={() => onSectionIdChange("initial-scroll")} className="hover:text-gray-400">
                 HOME
               </button>
             </li>
             <li>
-              <Link href="#" className="hover:text-gray-400">
+              <Link
+                href="https://ape.store/base/0x3f78f4bbc138f1f5110df1b85a02e2449565a4fb"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400"
+              >
                 Buy $PONGO
               </Link>
             </li>
@@ -44,7 +49,7 @@ export default function Sidebar({ activeSectionId, onSectionChange }: SidebarPro
             {sections.map((section) => (
               <li key={section.id}>
                 <button
-                  onClick={() => onSectionChange(section.id)}
+                  onClick={() => onSectionIdChange(section.id)}
                   className={`text-xl font-bold uppercase text-left w-full transition-colors ${
                     activeSectionId === section.id ? "text-white" : "text-gray-400 hover:text-white"
                   }`}
