@@ -1,5 +1,7 @@
 "use client"
 
+import Link from "next/link"
+
 import { Button } from "@/components/ui/button"
 import { Copy } from "lucide-react"
 import { useState } from "react"
@@ -21,8 +23,14 @@ export default function TokenomicsSection() {
         <div className="flex items-center">
           <span className="font-semibold w-24">Symbol:</span>
           <span className="flex-1">ROSY</span>
-          <Button variant="outline" size="sm" className="ml-2 bg-transparent">
-            Chart
+          <Button variant="outline" size="sm" className="ml-2 bg-transparent" asChild>
+            <Link
+              href="https://dexscreener.com/base/0x3A7C324DEE71c6e0d19988819f0b9B26311F579D"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Chart
+            </Link>
           </Button>
         </div>
         <div className="flex items-center">
