@@ -1,11 +1,11 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { Copy } from "lucide-react" // Removed Info import
+import { Copy } from "lucide-react"
 import { useState } from "react"
 
 export default function TokenomicsSection() {
-  const contractAddress = "0x66 (Coming Soon)"
+  const contractAddress = "0x41fff8cba2f368df6112cbfdc5fc76c8dad274b6"
   const [copied, setCopied] = useState(false)
 
   const handleCopy = () => {
@@ -36,7 +36,6 @@ export default function TokenomicsSection() {
         <div className="flex items-center col-span-full">
           <span className="font-semibold w-24">Total Supply:</span>
           <span className="flex-1">1,000,000,000</span>
-          {/* Removed Info icon */}
         </div>
       </div>
     </section>
