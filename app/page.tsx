@@ -246,10 +246,10 @@ export default function Component() {
       <section className="py-12 px-4 md:px-6 lg:px-8 bg-blue-950 text-center">
         <h2 className="text-4xl font-bold mb-8 font-heading">Join HeHua Community</h2>
         <div className="flex justify-center space-x-6">
-          <a href="#" aria-label="Telegram" className="text-white hover:opacity-75">
+          <a href="https://t.me/huahuaonbase" aria-label="Telegram" className="text-white hover:opacity-75">
             <Image src="/images/telegram-icon.webp" alt="Telegram" width={40} height={40} />
           </a>
-          <a href="#" aria-label="Twitter" className="text-white hover:opacity-75">
+          <a href="https://x.com/basehuahua" aria-label="Twitter" className="text-white hover:opacity-75">
             <Image src="/images/twitter-icon.png" alt="Twitter" width={40} height={40} />
           </a>
         </div>
