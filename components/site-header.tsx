@@ -18,8 +18,17 @@ export default function SiteHeader() {
         >
           Twitter
         </Link>
-        <Button className="rounded-full px-4 py-2 text-sm md:px-6 md:py-2 md:text-base font-bold bg-red-500 hover:bg-red-600 text-white">
-          Buy $ROSY
+        <Button
+          className="rounded-full px-4 py-2 text-sm md:px-6 md:py-2 md:text-base font-bold bg-red-500 hover:bg-red-600 text-white"
+          asChild
+        >
+          <Link
+            href="https://ape.store/base/0x41fff8cba2f368df6112cbfdc5fc76c8dad274b6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Buy $ROSY
+          </Link>
         </Button>
         <Link
           href="https://t.me/baserosy"
