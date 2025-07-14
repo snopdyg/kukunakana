@@ -5,12 +5,14 @@ import ClickToPlaySection from "@/components/click-to-play-section"
 import HowToBuySection from "@/components/how-to-buy-section"
 import RoadmapSection from "@/components/roadmap-section"
 import SiteFooter from "@/components/site-footer"
-import type { Metadata } from "next" // Import Metadata type
+// Removed Metadata import
+// import type { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: "$ROSY",
-  description: "Rosy Token - Get cozy with Rosy on Base Network", // Optional: Add a description
-}
+// Removed metadata export
+// export const metadata: Metadata = {
+//   title: "$ROSY",
+//   description: "Rosy Token - Get cozy with Rosy on Base Network",
+// }
 
 export default function Home() {
   return (
