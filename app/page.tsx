@@ -1,33 +1,42 @@
-import SiteHeader from "@/components/site-header"
-import HeroSection from "@/components/hero-section"
-import TokenomicsSection from "@/components/tokenomics-section"
-import ClickToPlaySection from "@/components/click-to-play-section"
-import HowToBuySection from "@/components/how-to-buy-section"
-import RoadmapSection from "@/components/roadmap-section"
-import SiteFooter from "@/components/site-footer"
-// Removed Metadata import
-// import type { Metadata } from "next"
+"use client"
 
-// Removed metadata export
-// export const metadata: Metadata = {
-//   title: "$ROSY",
-//   description: "Rosy Token - Get cozy with Rosy on Base Network",
-// }
+import { useState } from "react"
+import Sidebar from "@/components/sidebar"
+import ContentDisplay from "@/components/content-display"
+import { sections } from "@/types/sections"
 
 export default function Home() {
+  const [activeSectionId, setActiveSectionId] = useState<string>("initial-scroll") // Default ke tampilan gulir gambar awal
+  const [showSidebar, setShowSidebar] = useState<boolean>(true) // Default sidebar terlihat
+
+  const handleSectionChange = (id: string) => {
+    setActiveSectionId(id)
+    if (id === "initial-scroll") {
+      setShowSidebar(true)
+    } else {
+      setShowSidebar(false) // Sembunyikan sidebar saat bagian spesifik diklik
+    }
+  }
+
+  const handleBackToHome = () => {
+    setActiveSectionId("initial-scroll")
+    setShowSidebar(true) // Tampilkan sidebar saat kembali ke Home
+  }
+
+  const activeSection = sections.find((section) => section.id === activeSectionId)
+
   return (
-    <div className="min-h-screen bg-blue-200 text-gray-800">
-      <SiteHeader />
-      <main className="container mx-auto px-4 py-8 md:py-12">
-        {" "}
-        {/* Added container for consistent max-width and padding */}
-        <HeroSection />
-        <TokenomicsSection />
-        <ClickToPlaySection />
-        <HowToBuySection />
-        <RoadmapSection />
-      </main>
-      <SiteFooter />
+    <div className="flex flex-col md:flex-row min-h-screen">
+      {showSidebar && (
+        <div className="w-full md:w-[400px] flex-shrink-0">
+          <Sidebar activeSectionId={activeSectionId} onSectionChange={handleSectionChange} />
+        </div>
+      )}
+      <ContentDisplay
+        section={activeSection}
+        isInitialView={activeSectionId === "initial-scroll"}
+        onBackToHome={handleBackToHome}
+      />
     </div>
   )
 }
