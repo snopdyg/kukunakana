@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   title: "LIZLORD - King of Cold-Blooded Coins",
   description:
     "LIZLORD is the supreme lizard from the ancient bathhouse of Base. Cold-blooded, hot charted. All must kneel before $LORD.",
+  icons: {
+    icon: "/favicon.jpeg", // Updated favicon path
+  },
     generator: 'v0.dev'
 }
 
