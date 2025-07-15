@@ -23,7 +23,11 @@ export function HeroSection() {
             asChild
             className="bg-blue-500 hover:bg-blue-600 text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105"
           >
-            <a href="https://link-to-buy-lord.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://ape.store/base/0x0612a6f46f628cafb9a0a06c7f293a5d7bc4d12e" // Updated buy link
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Buy $LORD
             </a>
           </Button>
