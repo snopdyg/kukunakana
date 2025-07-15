@@ -37,7 +37,7 @@ export default function AIChatPage() {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <Card className="w-full max-w-2xl shadow-lg">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold text-center text-blue-600">SumoPod AI Chat</CardTitle>
+          <CardTitle className="text-3xl font-bold text-center text-blue-600">LIZLORD AI CHAT</CardTitle>
         </CardHeader>
         <CardContent>
           <Textarea
