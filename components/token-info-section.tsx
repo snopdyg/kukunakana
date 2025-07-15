@@ -25,7 +25,8 @@ export function TokenInfoSection() {
           </Card>
           <Card className="bg-white border-blue-600 text-gray-800 shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold text-blue-600">Network</CardTitle>
+              <CardTitle className="text-2xl font-bold text-blue-600">Network</CardTitle>{" "}
+              {/* Fix the JSX closing tag */}
             </CardHeader>
             <CardContent>
               <p className="text-4xl font-extrabold">Base Chain</p>
@@ -36,8 +37,8 @@ export function TokenInfoSection() {
               <CardTitle className="text-2xl font-bold text-blue-600">Contract Address</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-lg md:text-xl font-mono break-all">0x... (Coming Soon)</p>
-              <p className="text-sm text-gray-600 mt-2">Stay tuned for the official contract address.</p>
+              <p className="text-lg md:text-xl font-mono break-all">0x0612a6f46f628cafb9a0a06c7f293a5d7bc4d12e</p>
+              <p className="text-sm text-gray-600 mt-2">Verify on BaseScan.</p>
             </CardContent>
           </Card>
         </div>
