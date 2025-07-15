@@ -12,7 +12,8 @@ export async function POST(req: NextRequest) {
 
     const apiKey = process.env.SUMOPOD_API_KEY
     if (!apiKey || !apiKey.startsWith("sk-")) {
-      return Response.json({ error: "Server API key missing. Set SUMOPOD_API_KEY." }, { status: 500 })
+      // Changed to a generic error message
+      return Response.json({ error: "AI service unavailable. Please try again later." }, { status: 500 })
     }
 
     const upstream = await fetch("https://ai.sumopod.com/v1/chat/completions", {
