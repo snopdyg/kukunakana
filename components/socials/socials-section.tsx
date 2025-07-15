@@ -25,7 +25,7 @@ export function SocialsSection() {
               className="text-blue-600 hover:text-blue-800 text-xl px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <a
-                href="https://twitter.com/LIZLORD"
+                href="https://x.com/lizlordai" // Updated X link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -40,7 +40,7 @@ export function SocialsSection() {
               className="text-blue-600 hover:text-blue-800 text-xl px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <a
-                href="https://t.me/LIZLORD_Official"
+                href="https://t.me/lizlordai" // Updated Telegram link
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
