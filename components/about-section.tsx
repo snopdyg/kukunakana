@@ -3,8 +3,6 @@ import Image from "next/image"
 export function AboutSection() {
   return (
     <section id="about" className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800">
-      {" "}
-      {/* Smooth gradient from light gray to slightly darker light gray */}
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-blue-600">About $LORD</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">

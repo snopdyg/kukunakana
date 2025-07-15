@@ -21,7 +21,7 @@ export function SocialsSection() {
           <div className="flex flex-col sm:flex-row gap-4">
             <Button
               asChild
-              variant="ghost" // Changed to ghost variant for no background
+              variant="ghost"
               className="text-blue-600 hover:text-blue-800 text-xl px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <a
@@ -36,7 +36,7 @@ export function SocialsSection() {
             </Button>
             <Button
               asChild
-              variant="ghost" // Changed to ghost variant for no background
+              variant="ghost"
               className="text-blue-600 hover:text-blue-800 text-xl px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105"
             >
               <a

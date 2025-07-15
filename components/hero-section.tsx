@@ -1,12 +1,11 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-// Removed import for Twitter icon as it's no longer used
 
 export function HeroSection() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center text-center text-white overflow-hidden">
       <Image
-        src="/images/lizlord-hero.jpeg"
+        src="/images/lizlord-hero.png"
         alt="LIZLORD surrounded by money"
         layout="fill"
         objectFit="cover"
@@ -28,7 +27,6 @@ export function HeroSection() {
               Buy $LORD
             </a>
           </Button>
-          {/* Removed the "Learn More" button */}
         </div>
       </div>
     </section>

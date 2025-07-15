@@ -10,7 +10,7 @@ export function TokenInfoSection() {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="absolute inset-0 z-0 opacity-50" // Opacity changed from 20 to 50
+        className="absolute inset-0 z-0 opacity-50"
       />
       <div className="relative z-10 container mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-blue-600">Token Information</h2>
