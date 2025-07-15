@@ -16,7 +16,8 @@ export default function AIChatPage() {
     setResponse("Loading...")
 
     try {
-      const res = await fetch("/api/sumopod-chat", {
+      // Updated API endpoint to the new /api/chat
+      const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ prompt }),
